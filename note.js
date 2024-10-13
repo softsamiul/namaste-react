@@ -1,4 +1,6 @@
 /*
+Episode - 1
+------------
 1. What is CDN? Why do we use CDN?
 Ans: CDN stands for Content Delivery Network.
 
@@ -16,5 +18,39 @@ Send them inside an array if we have multiple child.
 
 6. What is a rect element?
 Ans: It's a simple object and react covert this into a html element.
+
+Episode - 2
+------------
+#Parcel
+- Dev Build
+- Local server
+- HMR - Hot Module Replacement
+- File watching algorithm - written in c++
+- Caching - Faster Builds
+- Image Optimization
+- Minification of files
+- Bundling
+- Compressing
+- Consistent hashing
+- Code spliting
+- Diffrential bundling - to support older browser
+- Diagnostic
+- Error handling
+- HTTps
+- Tree Shaking
+- Diffrent dev and prod bundles
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 */
