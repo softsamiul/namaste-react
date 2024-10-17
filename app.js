@@ -1,15 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-    "h1",
-    {id: "parent"},
-    [
-        React.createElement("div", {id: "child"}, React.createElement('h1', {id: "heading"}, "I'm h1 heading inside nested sections")),
-        React.createElement("div", {id: "child2"}, React.createElement('h1', {id: "heading2"}, "I'm h1 heading inside nested 2 sections"))
-    ]
-  );
+const Title = () => <h1>Dummy title</h1>
 
-  const root = ReactDOM.createRoot(document.getElementById("root"));
+const DummyComponent = () => (<div className="container">
+    <Title />
+    <h1>First Component</h1>
+</div>)
+const root = ReactDOM.createRoot(document.getElementById("root"))
 
-  root.render(parent);
+root.render(<DummyComponent />)

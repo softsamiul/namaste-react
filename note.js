@@ -42,6 +42,27 @@ Episode - 2
 
 
 
+Episode - 3
+-----------
+- React Element
+- DOM Elements
+- JSX - Not HTML, HTML like Syntax
+- React.createElement => JS Object => HTMLElement(render)
+- JSX => Babel transpile it to React.createElement => JS Object => HTMLElement(render)
+- Babel
+
+- React Component
+    i)Class based component - Old
+        A JS class which will return some jsx/rect elememnt
+    ii) Functional Component - New
+        A function which will retrun some jsx/react element.
+
+
+- Component Composition - Nothing the process of using one component inside another component
+- cross site scripting => JSX will take care of this
+
+
+
 
 
 
