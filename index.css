@@ -1,3 +1,70 @@
-#heading {
-  color: red;
+:root {
+  --primary-color: #ff5722;
+  --secondary-color: #4caf50;
+  --regular-color: #faf3e0;
+}
+/* ---Typo start--- */
+.container {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.ul_normal {
+  list-style-type: none;
+}
+.d_flex {
+  display: flex;
+}
+.justify-c-center {
+  justify-content: center;
+}
+.align-i-center {
+  align-items: center;
+}
+
+/* --- typo end---- */
+/* --- Header CSS Start --- */
+.header {
+  justify-content: space-between;
+}
+.logo {
+  width: 200px;
+}
+.logo_container {
+  max-width: 300px;
+}
+.nav_container {
+  max-width: calc(100vw - 300px);
+  justify-content: space-between;
+}
+.nav_container li {
+  margin: 10px;
+  cursor: pointer;
+}
+.user_info {
+  max-width: 300px;
+}
+/* --- Header CSS End --- */
+/* --- Search CSS Start --- */
+.search_container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+/* --- Search CSS End --- */
+.resturant_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.single_res_container {
+  border: 1px solid #777777;
+  box-sizing: border-box;
+}
+.card_info_container {
+  padding: 10px;
 }

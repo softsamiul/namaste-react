@@ -63,6 +63,11 @@ Episode - 3
 
 
 
+Brand name: TastyTap
+Ttag line: Tap into tasty!
+Primary color: #FF5722
+Secondary Color: #4CAF50
+Regular Color: #FAF3E0
 
 
 
