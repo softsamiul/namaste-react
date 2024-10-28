@@ -1,14 +1,15 @@
 import React from 'react'
-import resturants from '../../utils/mockData'
-import { CLODINARY_URL_PREFIX } from '../../utils/utils'
 import RestaurantCard from './RestaurantCard'
+import ShimerUi from '../ShimerUi'
 
-const RestaurantList = () => {
-  return (
+const RestaurantList = ({resList}) => {
+  console.log({resList})
+  return !resList.length ? <ShimerUi /> :  (
     <div className='resturant_container'>
-      {resturants && resturants.length > 0 && resturants.map((item)=>{
+      {resList && resList.length > 0 && resList.map((item)=>{
+        console.log(item.info.id)
         return <>
-        <RestaurantCard cardInfo = {item}/>
+        <RestaurantCard cardInfo = {item} key={item.info.id} />
         </>
       })}
 
