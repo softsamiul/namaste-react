@@ -72,6 +72,27 @@ Regular Color: #FAF3E0
 
 
 
+=================
+useEffect:
+If no dependency array => everycomponent render call useEffect
+If dependency array empty => useEffect is called on only initial render and just once
+If there dependency array => UseEffect is called every time that array variable get update
+
+UseState:
+- Never call useState inside body 
+- it's only used to create local state variable insive functional component
+- Define useTate variable at the top of component
+- Never define any useState inside any condition like if block, loop, function
+
+-----------------------------------
+React Router DOM
+
+Two types of routing
+1) Client side routing - No network call for routing, just loading the component 
+2) Server side routing - make a netwrok call and getting result from server and reload the whole page
+
+ 
+
 
 
 

@@ -65,6 +65,7 @@ a {
   max-width: 200px;
   border: 1px solid #f0f0f0;
   box-sizing: border-box;
+  min-height: 440px;
 }
 .card_info_container {
   box-sizing: border-box;

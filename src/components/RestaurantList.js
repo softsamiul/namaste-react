@@ -1,17 +1,15 @@
 import React from 'react'
+import ShimerUi from './ShimerUi'
 import RestaurantCard from './RestaurantCard'
-import ShimerUi from '../ShimerUi'
+import { Link } from 'react-router-dom'
 
 const RestaurantList = ({resList}) => {
-  console.log({resList})
   return !resList.length ? <ShimerUi /> :  (
     <div className='resturant_container'>
-      {resList && resList.length > 0 && resList.map((item)=>{
-        console.log(item.info.id)
-        return <>
-        <RestaurantCard cardInfo = {item} key={item.info.id} />
-        </>
-      })}
+      {resList && resList.length > 0 && resList.map((item)=><Link key={item.info.id} to={`/resturants/${item.info.id}`}>
+        <RestaurantCard cardInfo = {item}  />
+      </Link>
+      )}
 
       <div>
        

@@ -1,8 +1,7 @@
 import React from "react";
-import { CLODINARY_URL_PREFIX } from "../../utils/utils";
+import { CLODINARY_URL_PREFIX } from "../utils/utils";
 
 const RestaurantCard = (props) => {
-  console.log(props.cardInfo.info)
   const { name, areaName, cuisines, cloudinaryImageId, avgRating, costForTwo, isOpen, sla, totalRatingsString } = props.cardInfo.info;
   return (
     <div className="single_res_container">

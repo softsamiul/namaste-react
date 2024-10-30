@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Search from "./search/Search";
-import RestaurantList from "./resturant/RestaurantList";
-import { API_URI } from "../utils/utils";
+import { API_URI, MOCK_DATA } from "../utils/utils";
+import Search from "./Search";
+import RestaurantList from "./RestaurantList";
+
+
 
 const Body = () => {
   const [resList, setSetList] = useState([]);
@@ -12,16 +14,12 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const res = await fetch(API_URI);
-    const data = await res.json();
-    console.log(
-      data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
-    );
+    const data = MOCK_DATA
     setSetList(
-      data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+      data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFiteredList(
-      data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+      data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
   return (
