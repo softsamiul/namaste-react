@@ -1,6 +1,7 @@
 /*
-Episode - 1
-------------
+-----------------------------------
+Episode - 1:
+
 1. What is CDN? Why do we use CDN?
 Ans: CDN stands for Content Delivery Network.
 
@@ -19,8 +20,9 @@ Send them inside an array if we have multiple child.
 6. What is a rect element?
 Ans: It's a simple object and react covert this into a html element.
 
-Episode - 2
-------------
+--------------------------------------------------------
+Episode - 2:
+
 #Parcel
 - Dev Build
 - Local server
@@ -41,9 +43,8 @@ Episode - 2
 - Diffrent dev and prod bundles
 
 
-
-Episode - 3
------------
+-----------------------------------
+Episode - 3:
 - React Element
 - DOM Elements
 - JSX - Not HTML, HTML like Syntax
@@ -72,7 +73,7 @@ Regular Color: #FAF3E0
 
 
 
-=================
+----------------------------------------------------
 useEffect:
 If no dependency array => everycomponent render call useEffect
 If dependency array empty => useEffect is called on only initial render and just once
@@ -91,7 +92,44 @@ Two types of routing
 1) Client side routing - No network call for routing, just loading the component 
 2) Server side routing - make a netwrok call and getting result from server and reload the whole page
 
+ ----------------------------------------
+ Class Component:
+
+ - A JS class which have a render method which return some jsx is called as class component.
+
+ Why we write super()
  
+
+class UserClass extends React.Componenent {
+
+}
+
+Class life cycle
+- constructor => render => componentDidMount 
+
+Parent child= parent constructor -> parent render => If there any child then child constructor => child render => child componentDidMount , once child completely mounted then => parent componentDidMount
+
+
+ComponentDidMount: 
+
+------------------
+Class comp life cycle
+--------Mount--------
+- Constructor 
+    - Dummy and set the states with dummy data
+- Render 
+    - first render dummy data
+- componentDidMount
+    <APi call >
+    <this.setState>
+----- Update -------
+render (api data)
+html update with new fetched data
+componentDidUpdate
+----Unmounting-----
+componentWillunmount
+
+
 
 
 
