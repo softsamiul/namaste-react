@@ -132,9 +132,20 @@ componentWillunmount
 
 
 
+----------------------
+Sinngle Responsibility - 
+Use hooks
 
 
+Chunking
+code spliting
+dynamic bundling
+bundling on demand
+logical separation of bundle
+Lazy loading
+On demand loading
 
+Suspense component
 
 
 

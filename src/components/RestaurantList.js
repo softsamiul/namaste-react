@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const RestaurantList = ({resList}) => {
   return !resList.length ? <ShimerUi /> :  (
-    <div className='resturant_container'>
+    <div className='flex flex-wrap gap-8'>
       {resList && resList.length > 0 && resList.map((item)=><Link key={item.info.id} to={`/resturants/${item.info.id}`}>
         <RestaurantCard cardInfo = {item}  />
       </Link>

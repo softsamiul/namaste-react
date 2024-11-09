@@ -1,16 +1,21 @@
 import React from "react";
 import LOGO from "../assets/images/logo-no-background.png";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../hooks/useOnlineStatus";
 
 const Header = () => {
+  const status = useOnlineStatus()
   return (
-    <header id="header" className="header d_flex align-i-center">
+    <header id="header" className="flex justify-between items-center bg-gray-100">
       <div className="logo_container">
-        <img className="logo" src={LOGO} />
+        <img className="logo w-56" src={LOGO} />
       </div>
-      <div className="nav_container d_flex ">
+      <div className="flex gap-6">
         <nav className="nav_container_inner">
-          <ul className="ul_normal d_flex">
+          <ul className="flex gap-6">
+            <li>
+              Online status: {status ? <span className="text-green-700">Online</span> : <span className="text-red-700">Offline</span>}
+            </li>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -23,7 +28,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="user_info">
-          <ul className="ul_normal d_flex">
+          <ul className="flex gap-6">
             <li>Cart</li>
             <li>
               <Link to="/login">Login</Link>
